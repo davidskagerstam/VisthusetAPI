@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+    	<meta lang="sv">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	
+    	<link rel="stylesheet" type="text/css" href="/static/cafe/css/style.css" />
+    	<!-- <script type="text/javascript" defer="defer" src="{% static 'docs/js/baseJS.js' %"}></script> -->
+    	<title>{% block title %}Välkommen till Café Visthuset{% endblock %}</title>
+  	</head>
+  	<body class="container-fluid">
+  	{% block header %}
+    	<header class="row">
+        <div class="col-md-4 col-md-4"> 
+          <img class="img-responsive img-rounded" src="/static/cafe/images/Logga_Visthuset.jpg" />
+        </div>
+        <div style="margin-top: 5%;" >
+          <h1 class="col-md-8">{% block h1 %}Café Visthuset{% endblock %}</h1>
+          <h3 class="col-md-8">{% block h2 %}En lummig mötesplats vid Göta kanal.{% endblock %}</h3>
+        </div>
+        </header>
+        <div class="row">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                <p class="navbar-brand" href="#">Navigera |</p>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="/">Visthuset</a></li>
+                  <li><a href="/meny">Meny</a></li>
+                  <li><a href="/evenemang">Evenemang</a></li> 
+                  <li><a href="#">Cykelpaket</a></li> 
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    {% endblock %}
+	{% block content %}
+	{% endblock %}
+
+   	{% block footer %}
+  		<footer class="row">
+      		<div class="col-md-12 col-md-3" style="margin-top: 2%;" >
+      			<h3>Kontakta oss!</h3>
+      			Café Visthuset<br>
+	    		Kanalvägen 2, Töreboda<br>
+    			<a href="tel:0506 - 77 75 50"> 0506 - 77 75 50</a> 
+        		<br>
+        		<a href="mailto:info@cafevisthuset.se">info@cafevisthuset.se</a><br><br>
+      			<a href="www.cafevisthuset.se">www.cafevisthuset.se</a>
+      			<br>
+      			<a href="www.cyklagotakanal.se">www.cyklagotakanal.se</a>
+      		</div>
+          <div class="col-md-12 col-md-3">
+            <a href="/api/">
+              <img class="img-responsive img-rounded" style="margin-top: 14%; height: 170px;" src="/static/cafe/images/Partner.jpg"/>
+            </a>
+          </div>
+          <div class="col-md-12 col-md-3">
+            <a href="/api/">
+              <img class="img-responsive img-rounded" style="margin-top: 22%; background: white; height: 130px;" src="/static/cafe/images/vastsverige_svensk_blaagul_del_av_WEBB.jpg" />
+            </a>
+          </div>
+      		<div class="col-md-12 col-md-3" style="margin-top: 4%;" >
+            
+            <h3>Öppettider</h3>
+            Vi har öppet juni - augusti samt helger i maj och september.
+            
+        		<h3>Samarbeta med oss!</h3>
+        		<a href="/api/">
+     				<p>Visthusets API</p>
+    			</a>
+    			</div>
+  		</footer>
+  	{% endblock %}
+  	</body>
+</html>
+

@@ -1,0 +1,16 @@
+{% extends "cafe/base.html" %}
+{% block titel %}
+    Välkommen till Café Visthusets API!
+{% endblock %}
+{% block content %}
+	<section class="row">
+		{% for event in events %}
+			<a href="{{ event }}">
+				<div class="col-md-12 col-md-4 img-hover">
+			    	<img class="img-responsive img-rounded" src="{{ event.Image.url }}" alt="" width="100%"/>
+					<h2>{{ event.Title }}</h2><br>
+				</div>
+			</a>
+		{% endfor %}
+	</section>
+{% endblock %}

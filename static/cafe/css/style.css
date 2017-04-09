@@ -1,0 +1,108 @@
+body {
+	font-family: optima, areal, helvetica;
+	background-color: lightblue;
+}
+
+.body__background {
+	position: absolute;
+	background-image: url("/static/docs/images/Background.png");
+	background-size: 100%;
+	opacity: 0.2; 
+	filter: alpha(opacity=20);
+}
+	
+header {
+	background-color: lightblue;
+  padding: 20px;
+  }	
+.navbar-default {
+  background-color: lightblue;
+  background-image: none;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  font-size: 1.5em;
+  }
+.navbar-default button {
+  border: none;
+  }
+
+.navbar-default button:hover {
+    background-color: lightblue;
+  }
+.navbar-brand {
+    font-size: 1.0em;
+  }
+
+section {
+  background-color: whitesmoke;
+  padding-top: 10px;
+  }
+section p {
+  font-size: 1.3em;
+  }
+@media screen and (max-width: 900px) {
+  section {
+    text-align: center;
+    }
+  }
+@media screen and (min-width: 900px) {
+  section img {
+    margin-top: 30px;
+    }
+}
+section div {
+  background-color: whitesmoke;
+  padding: 20px;
+  }
+section .img-hover img {
+    -webkit-transition: all .6s ease; /* Safari and Chrome */
+  	-moz-transition: all .6s ease; /* Firefox */
+  	-o-transition: all .6s ease; /* IE 9 */
+  	-ms-transition: all .6s ease; /* Opera */
+  	transition: all .6s ease;
+  }
+section .img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.05); /* Opera */
+    transform:translatZ(0) scale(1.05);
+	}
+   
+section .grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%); 
+  }
+
+footer {
+  margin-bottom: 50px;
+  }
+
+footer div {
+  margin: 0 auto;
+  text-align: center;
+  align: center;
+  }
+
+@media screen and (max-width: 900px) {
+  footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    footer img {
+      margin: 0 auto;
+      padding: 20px;
+      display: block;
+      margin: auto; 
+    }
+  }
